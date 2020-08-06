@@ -17,10 +17,4 @@ export class MessageResolver {
         this.messages.push(msg);
         return msg;
     }
-
-    updateMessage(@Args('description') description: string):any {
-        const msg = { id: this.messages.length + 1, description: description }
-        this.messages.push(msg);
-        return msg;
-    }
 }
